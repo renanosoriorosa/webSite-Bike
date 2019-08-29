@@ -1,0 +1,14 @@
+$(document).ready(function(){
+	$(".img-renan").click(function(){
+		$("#renan").slideToggle("slow");
+		$("#renan1").slideToggle("slow");
+	});
+	$(".img-fran").click(function(){
+		$("#fran").slideToggle("slow");
+		$("#fran2").slideToggle("slow");
+	});
+	$(".img-lucas").click(function(){
+		$("#lucas").slideToggle("slow");
+		$("#lucas2").slideToggle("slow");
+	});
+});

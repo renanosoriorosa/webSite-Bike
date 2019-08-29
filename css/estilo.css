@@ -1,0 +1,251 @@
+
+/*INICIO da intro*/
+@media screen and (max-width: 358px) {
+   .intro .conteudo h1 {
+        font-size:38px !important;
+    }
+    .intro .conteudo blockquote p{
+    	width: 267px !important;
+    }
+}
+.intro{
+	margin-top: 100px;
+	background: url(http://bikcraft.com/wp-content/uploads/2015/10/bg.jpg) no-repeat center;
+	background-size: cover;
+	width: 100%;
+    height: 380px;
+}
+.intro .conteudo{
+	margin-top: 60px;
+	color:#fff;
+}
+.intro .conteudo a{
+	text-decoration: none;
+	color:#fec63e;
+	font-size: 14px;
+	font-weight: bold;
+	border: 3px solid #fec63e;
+	padding: 10px 30px;
+	letter-spacing: 2px;
+	transition: all 0.5s ;
+}
+.intro .conteudo a:hover{
+	color:#fff;
+	border-color: #fff;
+	transition: all 0.5s 
+}
+.intro .conteudo h1{
+	font-size: 48px;
+	font-weight: bold;
+	margin: 0;
+}
+.intro .conteudo blockquote p, .linha1-footer p{
+	font-style: italic;
+	font-family: Georgia,"Times New Roman",serif;
+	font-size: 14px;
+	line-height: 20px;
+}	
+blockquote p:before, blockquote p:after{
+	content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    margin: 14px auto 10px auto;
+}
+blockquote cite{
+	font-size: 14px;
+	font-weight: bold;
+	font-style: normal;
+}
+
+/*FIM da intro*/
+
+/*ANIMAÇÃO DE SLIDE NOS ELEMENTOS*/
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+/*FIMM ANIMAÇÃO DE SLIDE NOS ELEMENTOS*/
+
+/* PRODUTOS*/
+.produtos{
+	margin-top: 40px;
+}
+@media screen(max-width: 767px){
+	.col-pordutos{
+		width:100px !important; 
+	}
+}
+.produtos h2,.qualidade h2{
+	margin-bottom: 40px;
+	font-weight: bold;
+	letter-spacing: 3px;
+	font-size: 24px;
+}
+.produtos h2:after,.qualidade h2:after{
+	content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 14px auto 10px auto;
+}
+.conteudo-produtos h4, .conteudo-qualidade h4{
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.conteudo-produtos h4:after, .conteudo-qualidade h4:after{
+	content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 14px auto 10px auto;
+}
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    background-color: #000;
+}
+.produtos .conteudo-produtos, .produtos .conteudo-produtos {
+	padding: 10px 0 10px 0;
+	background-color: #fec63e;
+	margin-top: -10px;
+}
+.produtos-footer a,.qualidade-footer a{
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: bold;
+	color:#fec63e;
+	border: 3px  solid #fec63e;
+	padding: 10px 30px;
+	font-size: 14px;
+	transition: all .5s ease;
+}
+.produtos-footer a:hover, .qualidade-footer a:hover{
+	color:#000;
+	border-color: #000;
+	transition: all .5s ease;
+}
+/*FIM PRDUTOS*/
+
+/* PORTIFOLIO*/
+.portifolio{
+	background-color: #000;
+	margin-top: 60px;
+	padding-bottom: 30px;
+}
+.portifolio h2{
+	color: #fec63e;
+	font-weight: bold;
+	letter-spacing: 2px;
+	padding-bottom: 30px;
+	margin-top: 30px;
+	font-size: 24px;
+}
+.portifolio h2:after{
+	content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #fec63e;
+    margin: 14px auto 10px auto;
+}
+.img-portifolio img{
+	width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.img-footer-portifolio{
+	margin-top: 15px;
+}
+.portifolio-footer{
+	margin-top: 20px;
+}
+.portifolio-footer a{
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: bold;
+	color:#fec63e;
+	border: 3px  solid #fec63e;
+	padding: 10px 30px;
+	font-size: 14px;
+	transition: all .5s ease;
+}
+.portifolio-footer p{
+	color:#fff;
+}
+.portifolio-footer a:hover{
+	color:#fff;
+	border-color: #fff;
+	transition: all .5s ease;
+}
+/*FIM PORTIFOLIO*/
+
+/* QUALIDADE */
+.qualidade{
+	margin-top: 40px;
+}
+/*.qualidade:after{
+	content: "";
+    width: 634px;
+    height: 83px;
+    display: block;
+    background: url(../img/linhas.png) no-repeat center;
+    position: absolute;
+}*/
+.qualidade img{
+	margin-bottom: 40px;
+}
+.conteudo-qualidade{
+	margin-bottom: 60px;
+}
+.conteudo-qualidade p{
+	font-family: Georgia,"Times New Roman",serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+.qualidade-footer{
+	padding-top: 0px;
+    clear: both;
+}
+.qualidade-footer p{
+	margin-bottom: 30px;
+}
+/*FIM QUALIDADE*/

@@ -1,0 +1,89 @@
+/*ANIMAÇÃO DE SLIDE NOS ELEMENTOS*/
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+/*FIMM ANIMAÇÃO DE SLIDE NOS ELEMENTOS*/
+.titulo{
+    margin-top: 140px;
+}
+.titulo h2{
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+.titulo h2:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 14px auto 10px auto;
+}
+.artigos{
+    margin-top: 45px;
+    margin-bottom: 100px;
+}
+.artigos .linha1,.artigos .linha3 {
+    background-color:#fec63e;
+}
+.artigos .linha2,.artigos .linha4 {
+    background-color:#fff;
+}
+.artigos .linha1:hover,.artigos .linha2:hover,.artigos .linha3:hover,.artigos .linha4:hover{
+    background-color:#000;
+    color:#fec63e;
+}
+.artigos .artigo-1,.artigos .artigo-2,.artigos .artigo-3,.artigos .artigo-4{
+     cursor: pointer;
+}
+.artigos .flecha{
+    float: right;
+    margin-top: -44px;
+    margin-right: 40px;
+    cursor: pointer;
+    font-size: 25px;
+}
+.artigos .linha2{
+    background-color:#fff;
+}
+
+
+/*ROTAÇÃO*/
+.rotate{
+    transform: rotate(90deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
+    transition: 1s;
+}
+.rotate2{
+    transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
+    transition: 1s;
+}
